@@ -9,10 +9,10 @@
 
 ### Requirements
 
-- A frontend that allows two players to play against each other.
-- A backend that handles the game logic and the communication between the two players.
-- The game should have a real time communication between the two players.
-- Add logger to log the game events in the server.
+- A frontend that allows two players to play against each othe (100%)
+- A backend that handles the game logic and the communication between the two players (100%)
+- The game should have a real time communication between the two players. (70%)
+- Add logger to log the game events in the server. (90%)
 
 - Did you complete any bonus points? **No**
 
