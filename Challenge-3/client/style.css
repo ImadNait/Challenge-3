@@ -1,0 +1,97 @@
+body{
+    background-color: #2e2e2e;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 70px;
+
+}
+.board {
+    margin: auto;
+    width: 490px;
+}
+
+.board button {
+    height: 150px;
+    width: 150px;
+    float: left; 
+    margin: 5px;
+    font-size: 3em;
+}
+
+#message {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+:root{
+    --cell-size:100px;
+    --mark-size:calc(var(var(--cell-size))* .9);
+}
+.board{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+
+}
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid white;
+    display: flex;
+    font-size: 70px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+#restartb{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    border:solid;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: #2e2e2e;
+    border-color: white;
+    
+    
+}
+#restartb:hover{
+    background-color: white;
+    color: #2e2e2e;
+    transition-duration: 0.8s;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+.cell:nth-child(3n+3){
+    border-right: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){
+    border-bottom: none;
+}
